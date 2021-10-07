@@ -26,4 +26,9 @@ class Barang extends CI_Controller{
         $this->brg->up_peminjaman($data, $id);
         redirect(base_url().'Barang');
     }
+
+    public function delete($id){
+        $this->brg->delete(['id' => $id]);
+        redirect(base_url().'Barang');
+    }
 }

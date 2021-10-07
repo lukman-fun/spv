@@ -202,6 +202,18 @@ if($this->session->id==null){
 								</ul>
 							</div>
 						</li>
+						<li class="nav-item <?= active_menu('Users'); ?>">
+							<a href="<?= base_url(); ?>Users">
+								<i class="fas fa-users"></i>
+								<p>Manage Users</p>
+							</a>
+						</li>
+						<li class="nav-item <?= active_menu('Profile'); ?>">
+							<a href="<?= base_url(); ?>Profile">
+								<i class="fas fa-user"></i>
+								<p>Profile</p>
+							</a>
+						</li>
 					</ul>
 				</div>
 			</div>

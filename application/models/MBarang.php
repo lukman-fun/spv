@@ -15,4 +15,8 @@ class MBarang extends CI_Model{
     // function gethistoryBRG($barang_id){
     //     return $this->db->query("SELECT history.*, departement.nama as namaDP FROM history LEFT JOIN departement ON history.departement_id=departement.id WHERE barang_id='" . $barang_id . "' ORDER BY id DESC LIMIT 1");
     // }
+
+    function delete($id){
+        $this->db->delete('barang', $id);
+    }
 }
